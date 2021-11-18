@@ -28,7 +28,7 @@ namespace RazorPagesValmart
             services.AddRazorPages().AddRazorRuntimeCompilation();
 
             services.AddDbContext<RazorPagesValmartContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("RazorPagesValmartContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("RazorPagesValmartContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
